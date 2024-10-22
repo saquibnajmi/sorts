@@ -24,8 +24,6 @@ int countsort(int arr[], int size){
     for(int i=0; i < size ; i++)
         count[arr[i]]++;
 
-
-    std::cout << "Sorted Array: ";
     int index=0;
     for (int i = 0; i < max+1; ++i) {
         for(;count[i]>0; --count[i]){
