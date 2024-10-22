@@ -1,6 +1,12 @@
 #include <iostream>
 
 int countsort(int arr[], int size){
+    //handle if array empty
+    if(size==0){
+    std::cout << "array empty" << std::endl;
+    return;
+    }
+    
     int max = arr[0];
     //finding max
     for(int i=0 ; i < size ; i++)
@@ -29,6 +35,7 @@ int countsort(int arr[], int size){
 
 }
 int main(){
+    //edit as may needed
     int arr[] = {0,2,2,1,5,5,5,4,3,3};
     int size = sizeof(arr)/sizeof(arr[0]);
 
